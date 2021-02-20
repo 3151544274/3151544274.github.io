@@ -1,0 +1,28 @@
+﻿<head>
+ <style id="sty">
+   body{background:url(img/2.png) no-repeat center center;
+   background-size:cover;
+   background-attachment:fixed;
+   }
+</style>
+</head>
+<!--//querySelector选择器(第一个元素)，类(class)('.类名称')，id('#id'),标签('标签名')-->
+<!--//querySelectorAll,语法同上，获取所有-->
+<!--//document.body ，获取body标签-->
+<body>
+<meat charset="UTF-8">
+<p id="text" title="title">text</p>
+<h1>标签1</h1>
+<div class="demo">div1</div>
+<div class="demo">div2</div> 
+<script>
+var a =document.getElementById('text');
+var b =document.getElementsByClassName('demo');
+var queryselector=document.querySelectorAll('.demo');
+var body=document.body;
+console.log(a);
+console.log(typeof a);
+console.log(queryselector);
+console.log(body);
+</script>
+</body>

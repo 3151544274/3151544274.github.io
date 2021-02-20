@@ -1,0 +1,32 @@
+﻿<style>
+div{
+width:300px;
+height:30px;
+color:#00FF00;
+background-color:black;
+}
+
+   body{background:url(img/2.png) no-repeat center center;
+   background-size:cover;
+   background-attachment:fixed;
+   }
+
+</style>
+<body>
+<body>
+<button>更新时间</button>
+<div>div</div>
+<script>
+var btn =document.querySelector('button');
+var div =document.querySelector('div');
+btn.onclick=function(){
+	var data=new Date;
+	var year=data.getFullYear();
+	var mouth=data.getMonth()+1;
+	var day=data.getDate();
+	var arr=['周日','周一','周二','周三','周四','周五','周六']
+	var day=data.getDay();
+	div.innerText='现在是'+year+'年'+mouth+'月'+day+'日，'+arr[day];
+}
+</script>
+</body>
