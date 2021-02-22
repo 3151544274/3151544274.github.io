@@ -1,0 +1,28 @@
+<head>
+<link href="css/bg.css" rel="styleSheet">
+</head>
+<body>
+<div id="box">
+<input id="ipt" value="请输入内容" />
+</div>
+<script>
+var ipt=document.getElementById('ipt');
+ipt.style.color='#999';
+ipt.onfocus=function(){
+	//获得焦点
+	if(ipt.value=='请输入内容'){
+		console.log('获得焦点');
+		ipt.value='';
+		this.style.color='#333';
+	}else{}
+}
+ipt.onblur=function(){
+	//失去焦点
+	if(this.value==''){
+	this.value='请输入内容';
+	this.style.color='#999';
+	}else{}
+
+}
+</script>
+</body>

@@ -1,0 +1,32 @@
+<head>
+<style>
+div{
+width:300px;
+height:30px;
+color:#00FF00;
+background-color:black;
+}
+ 
+   body{background:url(img/2.png) no-repeat center center;
+   background-size:cover;
+   background-attachment:fixed;
+   }
+
+</style>
+</head>
+<body>
+<button id="btn">显示当前时间→</button>
+<input type="text" value="" id="ipt">
+<script>
+var btn=document.getElementById('btn');
+btn.onclick=function(){
+	var date=new Date();
+	var time=date.getDay;
+	var ipt=document.getElementById('ipt');
+	ipt.value="被点击";
+/* 	ipt.disabled=true;
+	btn.disabled=true;禁用两个 */
+	this.disabled=true;//禁用this
+}
+</script>
+</body>

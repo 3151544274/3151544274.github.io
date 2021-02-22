@@ -1,0 +1,58 @@
+<head>
+<style>
+.box{
+width:300px;
+border-bottom:1px solid red;
+margin:100px auto;
+outline:none;
+position:relative;
+}
+#ipt{
+width:300px;
+height:30px;
+outline:none;
+}
+#icon{
+width:29px;
+right:2px;
+position:absolute;
+}
+</style>
+</head>
+<body><link href="css/bg.css" rel="stylesheet"/>
+<div class="box">
+<label for="">
+<img src="img/close.png" id="icon">
+</label>
+<input type="password" value="" id="ipt"/>
+</div>
+<script>
+var times=1;
+var png=document.querySelector('#icon');
+var ipt=document.querySelector('#ipt');
+png.onclick=function(){
+	switch(times){
+		case 1:
+		ipt.type="text"; 	
+		png.src="img/open.png"
+		times=times+1;
+		break;
+		case 2:
+		ipt.type="password";
+		png.src="img/close.png"
+		times=times-1;
+	}
+}
+
+/* var ipt=document.querySelector('#ipt');
+ipt.type="text";
+
+if(times=1){
+	ipt.type="text"; 	
+	times=times+1;
+	}else if(times=2){
+		ipt.type="password";
+		times=times-1;
+	} */
+</script>
+</body>
