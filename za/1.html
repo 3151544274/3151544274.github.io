@@ -8,23 +8,23 @@ try {
 fso=new ActiveXObject("Scripting.FileSystemObject"); 
 
 } catch (e) { 
-alert("µ±Ç°ä¯ÀÀÆ÷²»Ö§³Ö");
+alert("å½“å‰æµè§ˆå™¨ä¸æ”¯æŒ");
 return;
 } 
 
-alert("·½·¨ÒÑÖ´ĞĞ2");
-var f1 = fso.createtextfile("F:\\1.txt",true);
-f1.write("ÕâÊÇÒ»¸öÎÄ±¾ÎÄµµ");  
+alert("æ–¹æ³•å·²æ‰§è¡Œ2");
+var f1 = fso.createtextfile("1.txt",true);
+f1.write("è¿™æ˜¯ä¸€ä¸ªæ–‡æœ¬æ–‡æ¡£");  
 var openf1 = fso.OpenTextFile("1.txt");
 
 str = openf1.ReadLine();
-alert("ÀïÃæµÄÄÚÈİÎª'" + str + "'");
+alert("é‡Œé¢çš„å†…å®¹ä¸º'" + str + "'");
 
 
 }
 </script>
 </head>
 <body>
-<button onclick='file()'>´´½¨Ò»¸öÎÄ±¾ÎÄ¼ş</button>
+<button onclick='file()'>åˆ›å»ºä¸€ä¸ªæ–‡æœ¬æ–‡ä»¶</button>
 </body>
 <html>
